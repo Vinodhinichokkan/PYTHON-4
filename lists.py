@@ -27,3 +27,5 @@ mycopy.sort()
 
 print(mycopy) #[1, 3, 5, 18, 24]
 print(nums)  #[1, 24, 18, 5, 3]
+
+

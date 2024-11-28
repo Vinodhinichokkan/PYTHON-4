@@ -1,5 +1,7 @@
 #dictionaries
 
+#keys should be unique in dict 
+
 car ={
     "brand": "Tesla",
     "model": "Model_3_P",
@@ -51,6 +53,51 @@ print(car.popitem())  #('year', 2024)
 print(car)    #{'brand': 'Nio', 'model': 'Model_3_P'}
 
 #delete and clear
+car["EV"] = "Yes"
+del car["EV"]
+print(car)    #{'brand': 'Nio', 'model': 'Model_3_P'} 
+
+car2.clear()
+print(car2)  #{}
+
+del car2
+
+#copy dictionaries
+print('')
+car2 = car.copy()
+car2["EV"] = "NO"
+
+print("Good copy!")  #Good copy!
+print(car)    #{'brand': 'Nio', 'model': 'Model_3_P'}
+print(car2)  #{'brand': 'Nio', 'model': 'Model_3_P', 'EV': 'NO'}
+
+#use the dict()constructor function
+
+car3 = dict(car)
+print('')
+
+print("Good copy!")   #Good copy!
+print(car3)  #{'brand': 'Nio', 'model': 'Model_3_P'}
+
+#nested dictionaries
+
+member1 ={
+    "name": "Vino",
+    "instrument": "brand"
+}
+member2 ={
+    "name": "Abi",
+    "instrument": "model"
+}
+band = {
+    "member1" : member1,
+    "member2" : member2
+}
+print('')
+print(band)  #{'member1': {'name': 'Vino', 'instrument': 'brand'}, 'member2': {'name': 'Abi', 'instrument': 'model'}}
+
+
+
 
 
 
