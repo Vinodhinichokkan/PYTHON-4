@@ -31,6 +31,13 @@ def multiple_items(*args):
     print(type(args))        #<class 'tuple'>
 
 multiple_items("Vino","abi","hari")
+ 
+def multi_lined_items(*args):
+    print (args)           #('Chocolate', 'Ice-cream', 'Dessert')
+    print(type(args))    #<class 'tuple'>
+
+multi_lined_items("Chocolate","Ice-cream","Dessert")
+
 
 
 
